@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 public class EmailValidation {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		Pattern pattern = Pattern.compile("^([a][b][c])+[@]([b][r][i][d][g][e][l][a][b][z])+");
+		Pattern pattern = Pattern.compile("^([a][b][c])+[@]([b][r][i][d][g][e][l][a][b][z][.][c][o])+");
 		while (true) {
 			System.out.println("Do you want to enter Email address: \nselect \n1.yes\n2.no");
 			int option = Integer.parseInt(sc.nextLine());
@@ -22,6 +22,7 @@ public class EmailValidation {
 			}
 			}
 			else{
+				System.out.println("Thank you!");
 				break;
 			}
 		}
